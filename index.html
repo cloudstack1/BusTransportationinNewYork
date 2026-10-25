@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bus Transportation in New York, NY | Coach Bus Rental NYC</title>
+
+    <meta name="description" content="Explore bus transportation options in New York, NY, including cheap bus rental, affordable bus rental, field trip bus, wedding transportation, and sports team travel.">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 110px;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #ffffff;
+            color: #222222;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        a {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #551A8B;
+        }
+
+        .site-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background: #ffffff;
+            border-bottom: 1px solid #e5e5e5;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        .header-inner {
+            max-width: 1150px;
+            margin: auto;
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo img {
+            display: block;
+            width: 170px;
+            max-height: 65px;
+            object-fit: contain;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .navigation a {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .header-spacer {
+            height: 95px;
+        }
+
+        .hero {
+            background: #f4f7fb;
+            padding: 55px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e6eaf0;
+        }
+
+        .hero h1 {
+            max-width: 900px;
+            margin: 0 auto 15px;
+            color: #172b4d;
+            font-size: clamp(28px, 4vw, 42px);
+            line-height: 1.25;
+        }
+
+        .hero p {
+            max-width: 760px;
+            margin: auto;
+            color: #444444;
+            font-size: 17px;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 35px 24px;
+        }
+
+        article h2 {
+            margin: 35px 0 14px;
+            color: #172b4d;
+            font-size: 27px;
+            line-height: 1.4;
+        }
+
+        article h3 {
+            margin: 25px 0 10px;
+            color: #263c5a;
+            font-size: 21px;
+        }
+
+        article p {
+            margin-bottom: 18px;
+        }
+
+        article ul {
+            margin: 0 0 22px 25px;
+        }
+
+        article li {
+            margin-bottom: 8px;
+            padding-left: 4px;
+        }
+
+        .video-section,
+        .map-section,
+        .blog-section {
+            margin-top: 35px;
+            padding: 25px;
+            background: #f8f9fb;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .video-section h2,
+        .map-section h2,
+        .blog-section h2 {
+            margin-top: 0;
+        }
+
+        .embed-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .video-container {
+            aspect-ratio: 16 / 9;
+        }
+
+        .map-container {
+            aspect-ratio: 4 / 3;
+        }
+
+        .embed-container iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .contact-section {
+            margin-top: 35px;
+            padding: 30px;
+            background: #f4f7fb;
+            border-radius: 10px;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+        }
+
+        .contact-details p {
+            margin-bottom: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 22px;
+            border: 1px solid #0000EE;
+            border-radius: 5px;
+            font-weight: 700;
+            background: #ffffff;
+        }
+
+        .site-footer {
+            margin-top: 40px;
+            padding: 25px 20px;
+            text-align: center;
+            background: #172b4d;
+            color: #ffffff;
+        }
+
+        .site-footer p {
+            margin: 5px 0;
+        }
+
+        .site-footer a {
+            color: #ffffff;
+        }
+
+        @media (max-width: 700px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 8px;
+                padding: 8px 12px;
+            }
+
+            .logo img {
+                width: 140px;
+                max-height: 48px;
+            }
+
+            .navigation {
+                justify-content: center;
+                gap: 10px 16px;
+            }
+
+            .navigation a {
+                font-size: 13px;
+            }
+
+            .header-spacer {
+                height: 110px;
+            }
+
+            .hero {
+                padding: 38px 18px;
+            }
+
+            .container {
+                padding: 25px 18px;
+            }
+
+            article h2 {
+                font-size: 23px;
+            }
+
+            article h3 {
+                font-size: 19px;
+            }
+
+            .video-section,
+            .map-section,
+            .blog-section,
+            .contact-section {
+                padding: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="logo" href="http://tsuglobal.com/" aria-label="Coach Bus Rental NYC home">
+                <img
+                    src="https://www.tsuglobal.com/tsu%20logo%20ai.jpg"
+                    alt="Coach Bus Rental NYC logo">
+            </a>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="http://tsuglobal.com/">Home</a>
+                <a href="#article">Article</a>
+                <a href="#services">Services</a>
+                <a href="#videos">Video</a>
+                <a href="#location">Location</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="header-spacer"></div>
+
+    <section class="hero">
+        <h1>Bus Transportation in New York, NY</h1>
+        <p>
+            Explore group transportation options for school trips, sports teams,
+            weddings, proms, and special events with Coach Bus Rental NYC.
+        </p>
+    </section>
+
+    <main class="container">
+        <article id="article">
+
+            <p>
+                Planning a group trip in New York City requires a clear itinerary
+                and careful coordination. Whether you are arranging a school
+                outing, sporting event, wedding, prom, or casino visit, consider
+                your passenger count, destination, schedule, and budget before
+                choosing a transportation option.
+            </p>
+
+            <p>
+                Coach Bus Rental NYC gives you a point of contact to discuss
+                your group's travel requirements. Share your trip details and
+                ask about current availability, vehicle options, and pricing
+                before confirming your arrangements.
+            </p>
+
+            <h2>How to Plan Bus Transportation in New York</h2>
+
+            <p>
+                New York City features educational institutions, sports venues,
+                event spaces, hotels, and popular attractions. Planning your
+                journey in advance helps you coordinate pickup locations,
+                departure times, and return arrangements.
+            </p>
+
+            <p>Before arranging transportation, prepare the following details:</p>
+
+            <ul>
+                <li><strong>Group size:</strong> Estimate the number of passengers.</li>
+                <li><strong>Pickup and drop-off:</strong> Identify your meeting points and destination.</li>
+                <li><strong>Travel schedule:</strong> Share your travel date, departure time, and return plans.</li>
+                <li><strong>Vehicle requirements:</strong> Ask about available vehicles and passenger capacity.</li>
+                <li><strong>Budget:</strong> Request a quote and clarify any additional charges.</li>
+            </ul>
+
+            <h2>Explore Cheap Bus Rental Options</h2>
+
+            <p>
+                If you are comparing a
+                <a href="http://tsuglobal.com/">cheap bus rental</a>,
+                consider the full cost of your trip rather than the advertised
+                price alone. Your route, travel duration, passenger count, and
+                specific requirements can affect the quote. Share these details
+                with the provider so you can compare options that fit your budget.
+            </p>
+
+            <h2>Affordable Bus Rental for Group Travel</h2>
+
+            <p>
+                An
+                <a href="http://tsuglobal.com/">affordable bus rental</a>
+                starts with a clear plan. Compare the quoted price, vehicle
+                capacity, availability, booking conditions, and any additional
+                fees before making your decision.
+            </p>
+
+            <p>
+                Whether you are organizing a local outing or a longer group
+                journey, confirm your pickup points, stops, and schedule before
+                finalizing your booking.
+            </p>
+
+            <h2 id="services">Transportation Services for Different Occasions</h2>
+
+            <h3>Field Trip Bus</h3>
+
+            <p>
+                Schools and colleges arrange educational visits, campus tours,
+                museum trips, and student activities throughout the year.
+                When planning a field trip bus, provide your passenger count,
+                destination, departure time, and return schedule. Ask about
+                vehicle suitability and availability for your trip.
+            </p>
+
+            <h3>Wedding Transportation</h3>
+
+            <p>
+                Weddings can involve travel between hotels, ceremony locations,
+                and reception venues. Share your event schedule and pickup
+                locations to discuss transportation arrangements that suit
+                your guests and itinerary.
+            </p>
+
+            <h3>Prom Transportation</h3>
+
+            <p>
+                Organizing a prom or school celebration requires coordination
+                among students, families, and event organizers. Discuss your
+                passenger count, travel times, and pickup and drop-off points
+                before confirming your transportation plans.
+            </p>
+
+            <h3>Sports Team Transportation</h3>
+
+            <p>
+                Teams traveling to games, tournaments, and competitions need
+                a clear schedule. Share your destination, team size, and any
+                equipment-related requirements when asking about available
+                transportation options.
+            </p>
+
+            <h3>Casino Transportation</h3>
+
+            <p>
+                Planning a casino or entertainment outing? Coordinate your
+                departure time, destination, passenger count, and return
+                arrangements. Contact the provider to confirm availability
+                and pricing for your planned journey.
+            </p>
+
+            <h2>Planning Group Travel in New York, NY</h2>
+
+            <p>
+                New York City's five boroughs offer a variety of destinations
+                for educational outings, sports events, celebrations, and
+                sightseeing. Busy roads and event schedules make it useful
+                to prepare your route and meeting points in advance.
+            </p>
+
+            <p>
+                Coach Bus Rental NYC is listed at 202 E 7th St, New York,
+                NY 10009. Contact the business directly to discuss your
+                travel plans and confirm its current service availability.
+            </p>
+
+            <h2>Tips Before You Book</h2>
+
+            <ul>
+                <li>Request a quote based on your complete itinerary.</li>
+                <li>Confirm passenger capacity and available vehicle options.</li>
+                <li>Check the pickup time, route, and return arrangements.</li>
+                <li>Ask about extra charges and cancellation terms.</li>
+                <li>Confirm all booking details directly with the provider.</li>
+            </ul>
+
+            <h2>Contact Coach Bus Rental NYC</h2>
+
+            <p>
+                Ready to discuss your next group journey? Contact Coach Bus
+                Rental NYC with your travel date, destination, passenger count,
+                and schedule. The team can discuss your requirements and
+                provide information about available options.
+            </p>
+
+            <p>
+                Visit the business's
+                <a href="https://www.google.com/maps?cid=12012466853792605643">bus transportation</a>
+                listing for additional business information.
+            </p>
+
+            <p>
+                <strong>Address:</strong> 202 E 7th St, New York, NY 10009
+                <br>
+                <strong>Phone:</strong>
+                <a href="tel:+13475022846">347-502-2846</a>
+                <br>
+                <strong>Website:</strong>
+                <a href="http://tsuglobal.com/">tsuglobal.com</a>
+            </p>
+
+            <p>
+                Call to discuss your trip, ask about current pricing, and
+                confirm availability before making a reservation.
+            </p>
+
+            <h2>Plan Your Next Group Trip</h2>
+
+            <p>
+                A clear itinerary helps you compare transportation options
+                and coordinate your group's travel. Prepare your trip details
+                and contact Coach Bus Rental NYC to discuss your requirements.
+            </p>
+
+            <p>
+                <strong>
+                    Where does your group need to go in New York, and are you
+                    ready to discuss a transportation option that fits your
+                    schedule and budget?
+                </strong>
+            </p>
+
+        </article>
+
+        <section class="video-section" id="videos">
+            <h2>Bus Transportation Video</h2>
+            <p>
+                Watch the video below for additional context related to bus
+                transportation and group travel.
+            </p>
+            <div class="embed-container video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/PIP744zX-8Q?si=vw1Cy2wEdwfFEcjv"
+                    title="Bus transportation video"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section class="map-section" id="location">
+            <h2>Find Coach Bus Rental NYC</h2>
+            <p>
+                View the embedded map for the business listing in New York, NY.
+                Confirm the address and contact details directly before visiting.
+            </p>
+            <div class="embed-container map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.7081884192316!2d-73.98026159999999!3d40.72444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259d0e722d005%3A0xa6b4daf5707665cb!2sCoach%20Bus%20Rental%20NYC!5e0!3m2!1sen!2s!4v1792849123072!5m2!1sen!2s"
+                    title="Coach Bus Rental NYC Google Map"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="blog-section">
+            <h2>More Information</h2>
+            <p>
+                Explore the embedded blog page below for additional information
+                from Coach Bus Rental NYC.
+            </p>
+            <div class="embed-container" style="height: 600px;">
+                <iframe
+                    src="https://coachbusrentalny.blogspot.com/p/home.html"
+                    title="Coach Bus Rental NYC blog"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>Discuss Your Transportation Needs</h2>
+            <p>
+                Contact Coach Bus Rental NYC to discuss your trip details and
+                ask about current availability and pricing.
+            </p>
+
+            <div class="contact-details">
+                <p><strong>Business:</strong> Coach Bus Rental NYC</p>
+                <p><strong>Address:</strong> 202 E 7th St, New York, NY 10009</p>
+                <p>
+                    <strong>Phone:</strong>
+                    <a href="tel:+13475022846">347-502-2846</a>
+                </p>
+                <p>
+                    <strong>Website:</strong>
+                    <a href="http://tsuglobal.com/">http://tsuglobal.com/</a>
+                </p>
+            </div>
+
+            <a class="cta-button" href="tel:+13475022846">Call 347-502-2846</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p><strong>Coach Bus Rental NYC</strong></p>
+        <p>202 E 7th St, New York, NY 10009</p>
+        <p>Phone: <a href="tel:+13475022846">347-502-2846</a></p>
+        <p>&copy; 2026 Coach Bus Rental NYC. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
